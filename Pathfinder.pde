@@ -3,7 +3,7 @@
 final int sizeX = 960, sizeY = 640; //Has to be a multiple of gridSize w/ a minimum of a 10x10 Grid System (10(gridSize)x10(gridSize)).
 GridElement[][] grid;
 int gridRows, gridColumns;
-int gridSize = 8; //Pixels - Try to keep the number a power of 2 and above 10. 8 minimum, but 8 is also VERY slow.
+int gridSize = 32; //Pixels - Try to keep the number a power of 2 and above 10. 8 minimum, but 8 is also VERY slow.
 int xPointer, yPointer;
 PImage maze;
 
@@ -18,7 +18,7 @@ void setup()
   size(960, 640);
   gridRows = sizeX / gridSize;
   gridColumns = sizeY / gridSize;
-  maze = loadImage("maze2.png");
+  maze = loadImage("maze1.png");
   if (sizeX % gridSize == 0 && sizeY % gridSize == 0)
   {
     grid = new GridElement[gridRows][gridColumns];
