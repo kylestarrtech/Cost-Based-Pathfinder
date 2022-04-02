@@ -1,0 +1,3 @@
+import interfascia.*;
+
+IFButton newButton;
